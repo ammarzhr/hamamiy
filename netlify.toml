@@ -1,0 +1,16 @@
+[build]
+  # Directory to publish (relative to root of your repo)
+  publish = "public"
+  
+  # Default build command
+  command = "npm install"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[dev]
+  command = "npm run dev"
+  port = 3000
